@@ -1,0 +1,329 @@
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Admin Login */
+.adminLogin {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.adminLabel {
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    background-image: url(../img/museumBackground.jpg);
+    background-position-x: center;
+    background-position-y: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.adminLabel h2 {
+    position: absolute;
+    top: 43%;
+    left: 12%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.adminLoginForm {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.adminForm {
+    position: absolute;
+    top: 30%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminTitle {
+    font-size: 1.4rem;
+}
+
+
+.adminForm img {
+    width: 5%;
+    margin: auto;
+}
+
+.adminInputs {
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+button {
+    font-size: 1.2rem;
+    margin-top: 20px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 250px;
+    height: 35px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #272326;
+}
+
+.adminAlertas {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 1%;
+    width: 250px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: salmon;
+    text-align: center;
+    background-color:  antiquewhite;
+}
+
+
+/* Admin */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    color: white;
+    background-color: black;
+
+}
+
+nav div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+nav div h6 {
+    font-size: 1.2rem;
+}
+
+nav div a {
+    color: white;
+    text-decoration: none;
+}
+
+.userAvatar {
+    width: 2vw;
+    height: 4vh;
+}
+
+.userAvatar img {
+    filter: brightness(0) invert(1);
+    width: 100%;
+    height: 100%;
+}
+
+.sessionUser{
+    justify-content: center;
+}
+
+.sessionUser div{
+    padding: 6%;
+}
+
+.cerrarSesion:hover {
+    color: red;
+}
+
+
+.datosAdmin {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.buttonBuscar {
+    width: 5%;
+}
+
+.tablaClientes {
+    margin-top: 8%;
+}
+
+.tablaClientes table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 6%;
+}
+
+.tablaClientes td,
+th {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.tablaClientes td img {
+    width: 35%;
+}
+
+.tablaIcon {
+    width: 5%;
+}
+
+.iconEdit:hover {
+    filter: invert(40%);
+    cursor: pointer;
+}
+
+.back{
+    text-align: left;
+    margin-left: 30%;
+}
+.back a{
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back a:hover{
+color: gray;
+}
+
+/* Registro Cliente */
+
+.registroCliente {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.registroCliente form {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registroCliente form input {
+    border: black solid 1px;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 20%;
+    height: 6vh;
+}
+
+.registroCliente form input::placeholder {
+    font-weight: 800;
+    color: black;
+}
+
+/*  Paginacion */
+
+.paginacion{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.pagination{
+    margin: auto;
+}
+
+.page-item{
+    padding: 1%;
+    text-decoration: none;
+    list-style: none;
+}
+
+.active{
+ font-weight: bold;
+ background-color: #ccc;
+}
+
+.disabled{
+    cursor: not-allowed ;
+    pointer-events: none;
+   
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+
+    .userAvatar{
+        height: 8vh;
+    }
+
+    .adminLabel h2 {
+        top: 44%;
+        left: 9%;
+        font-size: 2rem;
+    }
+
+    .adminLabel {
+        background-position-y: 40%;
+    }
+    
+    .adminInputs {
+        width: 250px;
+        height: 30px;
+
+    }
+
+    nav {
+       height: 18vh;
+    
+    }
+    
+
+    .buttonBuscar{
+        width: 10%;
+    }
+    
+  }
+
+  @media (min-width: 800px) and (max-width: 1280px) {
+
+    .registroCliente form input {
+        height: 3vh;
+    }
+    
+  
+.userAvatar{
+    width: 5vw;
+    height: 2.5vh;
+}
+
+.sessionUser h6{
+    width: 10vw;
+}
+
+
+}
