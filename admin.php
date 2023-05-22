@@ -107,7 +107,7 @@ email=<?php echo $resultados['email'] ?>&instaUser=<?php echo $resultados['insta
                     <li class="page-item 
                 <?php echo $_GET['pagina'] <= 1 ? 'disabled' : ''; ?>
                 ">
-                        <a class="page-link paginacionItem" href="Admin.php?pagina=<?php echo $_GET['pagina'] - 1; ?>" aria-label="Previous">
+                        <a class="page-link paginacionItem" href="admin.php?pagina=<?php echo $_GET['pagina'] - 1; ?>" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
@@ -115,13 +115,13 @@ email=<?php echo $resultados['email'] ?>&instaUser=<?php echo $resultados['insta
 
                         <li class="page-item  
                     <?php echo $_GET['pagina'] == $i + 1 ? 'active' : ''; ?>
-                    "><a class="page-link paginacionItem" href="Admin.php?pagina=<?php echo $i + 1; ?>"> <?php echo $i + 1; ?> </a></li>
+                    "><a class="page-link paginacionItem" href="admin.php?pagina=<?php echo $i + 1; ?>"> <?php echo $i + 1; ?> </a></li>
                     <?php endfor ?>
 
                     <li class="page-item 
                 <?php echo $_GET['pagina'] >= $paginas ? 'disabled' : ''; ?>
                 ">
-                        <a class="page-link paginacionItem" href="Admin.php?pagina=<?php echo $_GET['pagina'] + 1; ?>" aria-label="Next">
+                        <a class="page-link paginacionItem" href="admin.php?pagina=<?php echo $_GET['pagina'] + 1; ?>" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
